@@ -68,6 +68,7 @@ section {
     }
     .searches {
     	clear: both;
+    	color: #003113;
     	.jobPage {
     		margin: 1.5em;
     		border-top: 2px solid #EEEEEE;
@@ -88,6 +89,7 @@ section {
     		.description {
     			margin: 0;
     			font-size: 0.7em;
+    			color: #999999;
     		}
     		.jobKeywords {
     			margin: .5em 0em;
@@ -161,6 +163,12 @@ aside {
 	.infoText {    
 		text-align: center;
     	margin: 7em 0;
+    	h1 {
+    		color: #399843;
+    	}
+    	h3 {
+    		color: #999999;
+    	}
     }
 }
 
