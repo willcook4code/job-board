@@ -4,12 +4,12 @@ const Filters = React.createClass({
 	render: function() {
 		return (
 			<div className="searchBar">
-				<div className="filter">
-					<h2>Keywords</h2>
+				<div className="filter key">
+					<h4>Keywords</h4>
 					<input type="text"/>
 				</div>
-				<div className="filter">
-					<h2>Location</h2>
+				<div className="filter loc">
+					<h4>Location</h4>
 					<input type="text"/>
 				</div>
 				<button>Search</button>
