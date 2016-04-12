@@ -1,0 +1,57 @@
+@import 'variables';
+
+body {
+	background-color: #ECECEC;
+	margin: 0;
+}
+
+nav {
+	display: block;
+	overflow: hidden;
+	vertical-align: middle;
+	padding: 0 15%;
+	background-color: #FFFFFF;
+	border-top: .8em solid #515151;
+	h2 {
+		width: 9em;
+		float: left;
+		margin: 0;
+		color: #08401F;
+		img {
+			height: 2em;
+			position: relative;
+			top: .5em;
+		}
+	}
+	.navLinks {
+		padding: 2em;
+		a {
+			margin: 0 .3em;
+			text-decoration: none;
+			color: #676767;
+			font-weight: 600;
+		}
+	}
+}
+
+section {
+	margin: 1em 0 0 1em;
+	background-color: #FFFFFF;
+	width: 50%;
+    float: left;
+    .filter {
+    	float: left;
+    }
+    button {
+    	float: right;
+    	margin: 3em 22%;
+    }
+    .searches {
+    	clear: left;
+    }
+}
+aside {
+	float: right;
+}
+
+
