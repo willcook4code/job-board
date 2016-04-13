@@ -1,20 +1,26 @@
 import React from 'react';
 import JobPage from './job-page.js';
-
+import Posting from './../unicorn-post.js';
+import Company from './../unicorn-post.js';
+console.log(Company);
 const JobRows = React.createClass({
 	render: function() {
-		let jobPages = [
-			<JobPage key="1" />,
-			<JobPage key="2" />,
-			<JobPage key="3" />,
-			<JobPage key="4" />,
-			<JobPage key="5" />,
-			<JobPage key="6" />,
-			<JobPage key="7" />
-		];
+	const Jobs = Posting.map((unicorn, index, array) => {
+		return (
+			<JobPage 
+			key={index} 
+			jobLocation = {unicorn.attributes.jobLocation}
+			position = {unicorn.attributes.position}
+			postDay = {unicorn.attributes.postDay}
+			description = {unicorn.attributes.description}
+			keywords = {unicorn.attributes.keywords}
+			company = {unicorn.attributes.company}
+			/>
+			)
+		});
 		return (
 			<div className="searches">
-				{jobPages}
+				{Jobs}
 			</div>
 		);
 	}
