@@ -9,7 +9,7 @@ import Filters from './components/filters.js';
 import Companies from './components/companies.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import newCompany from './job-post.js';
 import FormPage from './components/formPage.js';
 
 

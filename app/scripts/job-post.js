@@ -1,15 +1,20 @@
 import CompanyCollection from './collections/company-collection.js';
+import featured from './../assets/featured.jpg'
+import featuredLogo from './../assets/featured-logo.jpg'
 
+var Company = new CompanyCollection();
 
 var companies = [
 	{
-		companyName: 'ProsNSONE',
-		companyLocation: 'New York, NY',
-		logo: '',
-		banner: '',
-		featured: false
+		_id: 1,
+		companyName: 'MaxPlay',
+		companyLocation: 'Austin, TX',
+		logo: 'https://raw.githubusercontent.com/TIY-Austin-Front-End-Engineering/fresh-job-board-views/master/images/featured-logo.jpg',
+		banner: 'https://raw.githubusercontent.com/TIY-Austin-Front-End-Engineering/fresh-job-board-views/master/images/featured.jpg',
+		featured: true
 	},
 	{
+		_id: 2,
 		companyName: 'Cool Workplace',
 		companyLocation: 'New York, NY',
 		logo: '',
@@ -17,9 +22,9 @@ var companies = [
 		featured: false
 	}
 ];
-var Company = new CompanyCollection();
+
 Company.add(companies);
-console.log(Company);
+
 
 
 // var postings = [

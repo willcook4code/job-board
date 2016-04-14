@@ -11,7 +11,7 @@ const PostingModel = Backbone.Model.extend({
 		keywords: []
 	},
 	rootUrl: 'http://tiny-za-server.herokuapp.com/collections/postings',
-	idAttribute: 'id'
+	idAttribute: '_id'
 });
 
 export default PostingModel;

@@ -21,7 +21,7 @@
 // 			keywords = {post.('keywords')}
 // 			/>
 // 			)
-// 		});M
+// 		});
 // 		return (
 // 			<div>
 // 				{Keys}
