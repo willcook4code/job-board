@@ -9,7 +9,8 @@ import Filters from './components/filters.js';
 import Companies from './components/companies.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import newCompany from './unicorn-post.js';
+
+import FormPage from './components/formPage.js';
 
 
 
@@ -17,17 +18,22 @@ const MainComponent = React.createClass({
 	render: function() {
 		return (
 			<div>
-				<Navs />
-				<section className="searchResults">
-					<Filters />
-					<JobRows />
+				<section className = 'homePage'>
+					<Navs />
+					<section className='searchResults'>
+						<Filters />
+						<JobRows />
+					</section>
+					<aside>
+						<Infos />
+						<Companies />
+					</aside>
 				</section>
-				<aside>
-					<Infos />
-					<Companies />
-				</aside>
+				<section className='formPage'>
+					<FormPage />
+				</section>
 			</div>
-		);
+		)
 	}
 });
 

@@ -3,7 +3,8 @@ import CompanyModel from './../models/company-model.js';
 
 
 const CompanyCollection = Backbone.Collection.extend({
-	model: CompanyModel
+	model: CompanyModel,
+	url: 'http://tiny-za-server.herokuapp.com/collections/companies'
 });
 
 

@@ -9,7 +9,7 @@ const CompanyModel = Backbone.Model.extend({
 		banner: '',
 		featured: false
 	},
+	rootUrl: 'http://tiny-za-server.herokuapp.com/collections/companies',
 	idAttribute: 'id'
 });
 
-export default CompanyModel;

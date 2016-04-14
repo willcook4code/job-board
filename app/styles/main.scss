@@ -35,7 +35,7 @@ nav {
 	}
 }
 
-section {
+.searchResults {
 	margin: 1em 0 0 1em;
 	background-color: #FFFFFF;
 	-webkit-box-shadow: 9px 9px 1px -5px rgba(0,0,0,0.41);
@@ -172,7 +172,9 @@ aside {
     }
 }
 
-
+.formPage {
+	clear: both;
+}
 
 
 

@@ -1,6 +1,7 @@
 import React from 'react';
-import featuredLogo from './../../assets/featured-logo.jpg';
-import featured from './../../assets/featured.jpg';
+import Company from './../job-post.js'
+
+
 
 const Companies = React.createClass({
 	render: function() {
@@ -8,12 +9,12 @@ const Companies = React.createClass({
 			<div className="compInfos">
 				<h1 className="compHeader">Featured Company</h1>
 				<div className="compPics">
-					<img className="featured" src={featured}/>
-					<img className="featuredLogo"src={featuredLogo}/>
+					<img className="featured" src={Company.get('featured')}/>
+					<img className="featuredLogo" src={Company.get('featuredLogo')}/>
 				</div>
 				<div className="infoText">
-					<h1>MaxPlay</h1>
-					<h3>Austin, TX</h3>
+					<h1>{Company.get('companyName')}</h1>
+					<h3>{Company.get('companyLocation')}</h3>
 				</div>
 			</div>
 		);

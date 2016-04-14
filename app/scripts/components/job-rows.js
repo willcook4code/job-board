@@ -1,20 +1,29 @@
 import React from 'react';
 import JobPage from './job-page.js';
-import Posting from './../unicorn-post.js';
-import Company from './../unicorn-post.js';
-console.log(Company);
+// import Keys from './each-keys.js';
+import Posting from './../collections/posting-collection.js';
+
+
 const JobRows = React.createClass({
+	getInitialState: function() {
+		return {Posting: []}
+	},
+	componentDidMount: function() {
+		Posting.on('add', () => {
+			this.setState({Posting: Posting})
+		});
+		Posting.fetch();
+	},
 	render: function() {
-	const Jobs = Posting.map((unicorn, index, array) => {
+	const Jobs = Posting.map((post, index, array) => {
 		return (
-			<JobPage 
-			key={index} 
-			jobLocation = {unicorn.attributes.jobLocation}
-			position = {unicorn.attributes.position}
-			postDay = {unicorn.attributes.postDay}
-			description = {unicorn.attributes.description}
-			keywords = {unicorn.attributes.keywords}
-			company = {unicorn.attributes.company}
+			<JobPage
+			jobLocation = {post.get('jobLocation')}
+			position = {post.get('position')}
+			postDay = {post.get('postDay')}
+			description = {post.get('description')}
+			keywords = {post.get('keywords')}
+			company = {post.get('company')}
 			/>
 			)
 		});
@@ -27,3 +36,7 @@ const JobRows = React.createClass({
 });
 
 export default JobRows;
+
+			// keywords = {post.get('keywords')}
+
+// {unicorn.attributes.Posting.get('1').get('company').get('companyName')}
