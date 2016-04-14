@@ -2,7 +2,7 @@ import CompanyCollection from './collections/company-collection.js';
 import featured from './../assets/featured.jpg'
 import featuredLogo from './../assets/featured-logo.jpg'
 
-var Company = new CompanyCollection();
+var company = new CompanyCollection();
 
 var companies = [
 	{
@@ -23,7 +23,7 @@ var companies = [
 	}
 ];
 
-Company.add(companies);
+company.add(companies);
 
 
 
@@ -50,7 +50,7 @@ Company.add(companies);
 // var Posting = new PostingCollection();
 // Posting.add(postings);
 
-export default Company;
+export default company;
 
 
 

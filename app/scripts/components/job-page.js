@@ -2,6 +2,12 @@ import React from 'react';
 
 const JobPage = React.createClass({
 	render: function() {
+		//map over the keywords
+		const eachKey = this.props.keywords.map((val, i, array) => {
+			return (
+				<span href="#" > {val} </span>
+			)
+		});
 		return (
 			<div className="jobPage">
 				<div>
@@ -12,11 +18,9 @@ const JobPage = React.createClass({
 					<p><strong>{this.props.company}</strong> &middot; {this.props.jobLocation}</p>
 				</div>
 				<p className="description">{this.props.description}</p>
-				<a href="#" > {this.props.keywords[0]} </a>
-				<a href="#" > {this.props.keywords[1]} </a>
-				<a href="#" > {this.props.keywords[2]} </a>
-				<a href="#" > {this.props.keywords[3]} </a>
-				<a href="#" > {this.props.keywords[4]} </a>	
+				<div className="jobKeywords">
+					{eachKey}
+				</div>
 			</div>
 		);
 	}
